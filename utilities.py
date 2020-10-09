@@ -1,6 +1,6 @@
 import os
 import sys
-import matplotlib as plt
+import matplotlib.pyplot as plt
 import math
 from tensorflow.keras import backend as K
 

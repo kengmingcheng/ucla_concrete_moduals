@@ -1,8 +1,6 @@
 import matplotlib as plt
 import math
 
-from . import utils # modul creadit: yuhaili
-
 def plot_history(history, label, save_path=SAVE_DIR):
     fig = plt.figure()
     plt.plot(history.history['loss'])

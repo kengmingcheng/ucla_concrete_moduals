@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import os
 import sys
 import matplotlib.pyplot as plt
@@ -30,7 +33,7 @@ def std(nums):
     dev = 0
     for num in nums:
         dev += (num - avg)**2
-    return math.sqrt(dev/(len(nums)-1)) if len(nums) > 1 else 0
+    return math.sqrt(dev / (len(nums) - 1)) if len(nums) > 1 else 0
 
 # keras functions
 def root_mean_squared_error(y_true, y_pred):

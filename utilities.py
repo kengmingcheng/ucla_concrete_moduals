@@ -15,7 +15,7 @@ def plot_history(history, label, save_path="./img/"):
     plt.savefig(os.path.join(save_path, label + '_Loss.png'), format='png')
     plt.show()
 
-def measure_v_predict(train_target_inverse, train_predict_inverse, cv_target_inverse, cv_predict_inverse, title='test', save_path="./img/"):
+def plot_mea_v_pred(train_target_inverse, train_predict_inverse, cv_target_inverse, cv_predict_inverse, title='test', save_path="./img/"):
     plt.plot(train_target_inverse, train_predict_inverse, marker='o', linestyle='None')
     plt.plot(cv_target_inverse, cv_predict_inverse, marker='x', linestyle='None')
     plt.plot([0,100],[0,100],'#303030', ls='--')

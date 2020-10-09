@@ -13,8 +13,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.utils import shuffle
 import matplotlib.pyplot as plt
 from scipy import stats
+"""
 from GPy.models import GPRegression
 from GPy.util.normalizer import Standardize
+"""
 
 def rmse(y_true, y_pred):
     """
@@ -79,6 +81,7 @@ def plot_result(y_true, y_pred, title):
     plt.savefig(FILE_PATH + FILE_NAME)
     plt.show()
 
+"""
 def gpy_cross_validation(kern, X, y, cv=5, random_state=19, optimize=False, score=None):
     r2 = []
     rm = []
@@ -100,3 +103,4 @@ def gpy_cross_validation(kern, X, y, cv=5, random_state=19, optimize=False, scor
             rm.append(rmse(y_test, res))
     
     return {'r2': r2, 'rmse':rm}
+"""
